@@ -1,0 +1,55 @@
+<style>
+    body {
+  background-color: #eeeeee;
+}
+.holder * {
+  border: 0;
+  border-bottom: solid silver 1px;
+}
+
+.holder {
+  width: 20em;
+  height: 20em;
+  min-height: 200px;
+  min-width: 200px;
+  margin: 50px auto 0;
+  padding: 20px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, .3);
+  background-color: white;
+  /* the magic happens hereunder*/
+  resize: both;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.holder textarea {
+  flex: 1;
+  resize: none;
+}
+.holder textarea,
+.holder input {
+  padding: 5px;
+  background: white no-repeat;
+  background-image: linear-gradient(to bottom, #2196F3, #2196F3);
+  background-position: 0 100%, 100% 100%;
+  background-size: 0 2px, 100% 1px;
+  transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.holder textarea:focus,
+.holder input:focus {
+  background-size: 100% 2px, 100% 1px;
+}
+</style>
+<div class="holder">
+	<p>Complex Technology System</p>
+	<textarea cols="30" rows="1">Thomas P. Hughes stated that because technology has been considered as a key way to solve problems, we need to be aware of its complex and varied characters to use it more efficiently.[68] What is the difference between a wheel or a compass and cooking machines such as an oven or a gas stove? Can we consider all of them, only a part of them, or none of them as technologies?
+
+Technology is often considered too narrowly; according to Hughes, "Technology is a creative process involving human ingenuity".[69] This definition's emphasis on creativity avoids unbounded definitions that may mistakenly include cooking “technologies," but it also highlights the prominent role of humans and therefore their responsibilities for the use of complex technological systems.
+
+Yet, because technology is everywhere and has dramatically changed landscapes and societies, Hughes argues that engineers, scientists, and managers have often believed that they can use technology to shape the world as they want. They have often supposed that technology is easily controllable and this assumption has to be thoroughly questioned.[68] For instance, Evgeny Morozov particularly challenges two concepts: “Internet-centrism” and “solutionism."[70] Internet-centrism refers to the idea that our society is convinced that the Internet is one of the most stable and coherent forces. Solutionism is the ideology that every social issue can be solved thanks to technology and especially thanks to the internet. In fact, technology intrinsically contains uncertainties and limitations. According to Alexis Madrigal's review of Morozov's theory, to ignore it will lead to “unexpected consequences that could eventually cause more damage than the problems they seek to address."[71] Benjamin R. Cohen and Gwen Ottinger also discussed the multivalent effects of technology.[72]
+
+Therefore, recognition of the limitations of technology, and more broadly, scientific knowledge, is needed – especially in cases dealing with environmental justice and health issues. Ottinger continues this reasoning and argues that the ongoing recognition of the limitations of scientific knowledge goes hand in hand with scientists and engineers’ new comprehension of their role. Such an approach of technology and science "[require] technical professionals to conceive of their roles in the process differently. [They have to consider themselves as] collaborators in research and problem solving rather than simply providers of information and technical solutions.</textarea>
+	<input type="text" value="text in" />
+</div>
